@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TalentLink — Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- SIDEBAR -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div class="logo">
+            <div class="logo-icon">✕</div>
+            <span class="logo-text">TalentLink</span>
+          </div>
+        </div>
+
+        <!-- TOGGLE BUTTON -->
+        <button class="sidebar-toggle" id="toggleSidebar">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <nav>
+          <a class="nav-link active" href="db.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+
+          <a class="nav-link" href="find-events.html">
+            <i class="fa-solid fa-compass"></i>
+            <span>Find Events</span>
+          </a>
+
+          <a class="nav-link">
+            <i class="fa-solid fa-users"></i>
+            <span>My Teams</span>
+          </a>
+
+          <a class="nav-link">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>My Projects</span>
+          </a>
+
+          <a class="nav-link">
+            <i class="fa-solid fa-message"></i>
+            <span>Messages</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="logout" onclick="logoutUser()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sign Out</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- ================= HOME PAGE ================= -->
+        <section id="homePage" class="page active">
+          <div class="content">
+            <div class="topbar">
+              <h1>Welcome back, Siddharth!</h1>
+              <div class="user">
+                <i class="fa-regular fa-bell"></i>
+                <img src="https://i.pravatar.cc/40" />
+              </div>
+            </div>
+
+            <!-- HOW TALENTLINK WORKS -->
+            <section class="section how-it-works neon-steps">
+              <div class="neon-steps-grid">
+                <div class="neon-card blue">
+                  <div class="neon-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <h3>Discover Events</h3>
+                  <p>
+                    Find and join campus events across tech, sports, gaming and
+                    culture — all in one place.
+                  </p>
+                </div>
+
+                <div class="neon-card green">
+                  <div class="neon-icon">
+                    <i class="fa-solid fa-user-group"></i>
+                  </div>
+                  <h3>Find Teammates</h3>
+                  <p>
+                    Team up with talented students to form or join your dream
+                    team effortlessly.
+                  </p>
+                </div>
+
+                <div class="neon-card pink">
+                  <div class="neon-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                  </div>
+                  <h3>Join & Build Projects</h3>
+                  <p>
+                    Launch projects, collaborate with peers, and build
+                    meaningful things together.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- STATS -->
+            <section class="section compact">
+              <div class="stats">
+                <div class="stat">Total Events<br /><span>78</span></div>
+                <div class="stat">Active Teams<br /><span>26</span></div>
+                <div class="stat">Projects Posted<br /><span>14</span></div>
+              </div>
+            </section>
+
+            <!-- RECENT POSTS -->
+            <section class="section">
+              <div class="section-head">
+                <h2>Recently Added Posts</h2>
+                <span class="view-all">View All →</span>
+              </div>
+
+              <div class="posts">
+                <div class="post">
+                  <img
+                    src="https://images.unsplash.com/photo-1542751110-97427bbecf20"
+                  />
+                  <h4>AI Startup Challenge</h4>
+                  <p>Stanford University • Apr 25, 2024</p>
+                </div>
+
+                <div class="post">
+                  <img
+                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                  />
+                  <h4>HackPrinceton</h4>
+                  <p>Princeton University • May 1, 2024</p>
+                </div>
+
+                <div class="post">
+                  <img
+                    src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf"
+                  />
+                  <h4>EcoSavvy Workshop</h4>
+                  <p>MIT • May 2, 2024</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- ================= FIND EVENTS PAGE ================= -->
+        <section id="eventsPage" class="page">
+          <!-- Find Events UI will go here next -->
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

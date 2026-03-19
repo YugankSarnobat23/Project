@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #05030d;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* ===== BACKGROUND ===== */
+.bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(168,85,247,0.18), transparent 55%),
+    linear-gradient(180deg, #05030d, #0a061c);
+  filter: blur(0.4px);
+}
+
+/* ===== CARD ===== */
+.auth-card {
+  width: 480px; /* MATCH IMAGE */
+  padding: 38px 40px;
+  border-radius: 26px;
+  background: rgba(14, 10, 32, 0.78);
+  backdrop-filter: blur(22px);
+  border: 1px solid rgba(168,85,247,0.22);
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.55),
+    inset 0 0 18px rgba(168,85,247,0.05);
+  animation: rise 0.8s ease;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.logo-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.header span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ===== TABS ===== */
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #a1a1c7;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #c084fc;
+}
+
+.underline {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 56px;
+  height: 2px;
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+  box-shadow: 0 0 12px rgba(168,85,247,0.6);
+  transition: transform 0.3s ease;
+}
+
+/* ===== TEXT ===== */
+h1 {
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #b9b9da;
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+
+/* ===== FIELDS ===== */
+.field {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.field i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8b8bb5;
+  font-size: 14px;
+}
+
+.field input {
+  width: 100%;
+  padding: 14px 16px 14px 42px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #a855f7;
+}
+
+/* ===== PRIMARY BUTTON ===== */
+.primary {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  border-radius: 18px;
+  border: none;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== OR ===== */
+.or {
+  text-align: center;
+  color: #8e8eb7;
+  font-size: 13px;
+  margin: 22px 0;
+}
+
+/* ===== GOOGLE ===== */
+.google {
+  width: 100%;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.google img {
+  width: 18px; /* FIXED */
+  height: 18px;
+}
+
+/* ===== SWITCH ===== */
+.switch {
+  text-align: center;
+  font-size: 14px;
+  color: #a1a1c7;
+  margin-top: 20px;
+}
+
+.switch button {
+  background: none;
+  border: none;
+  color: #c084fc;
+  font-weight: 600;
+  cursor: pointer;
+}
