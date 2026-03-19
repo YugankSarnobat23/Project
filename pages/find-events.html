@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TalentLink — Find Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/find-events.css" />
+    <link rel="stylesheet" href="db.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- SIDEBAR -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div class="logo">
+            <div class="logo-icon">✕</div>
+            <span class="logo-text">TalentLink</span>
+          </div>
+        </div>
+
+        <button class="sidebar-toggle" id="toggleSidebar">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <nav>
+          <a class="nav-link" href="db.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+
+          <a class="nav-link active" href="find-events.html">
+            <i class="fa-solid fa-compass"></i>
+            <span>Find Events</span>
+          </a>
+
+          <a class="nav-link">
+            <i class="fa-solid fa-users"></i>
+            <span>My Teams</span>
+          </a>
+
+          <a class="nav-link">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>My Projects</span>
+          </a>
+
+          <a class="nav-link">
+            <i class="fa-solid fa-message"></i>
+            <span>Messages</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sign Out</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN (THIS WAS MISSING) -->
+      <main class="main">
+        <div class="events-page">
+          <!-- HEADER -->
+          <div class="events-header">
+            <h1>Find Events</h1>
+            ...
+          </div>
+
+          <!-- HERO EVENT -->
+          <section class="hero-event">...</section>
+
+          <!-- EVENTS GRID -->
+          <section class="events-grid">...</section>
+
+          <!-- FLOATING ADD POST -->
+          <button class="fab">+</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- JS (IMPORTANT) -->
+    <script src="db.js"></script>
+    <script src="../js/find-events.js"></script>
+  </body>
+</html>
